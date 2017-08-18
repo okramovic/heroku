@@ -12,7 +12,7 @@ for (var i=0;i<6;i++){
 // http://expressjs.com/en/starter/basic-routing.html
 
 
-app.get("/", function (request, response) {
+app.get("/", function (request, res) {
 	//response.send('ohmg');
 
 //	response.sendFile(__dirname + '/index.html');
@@ -20,8 +20,10 @@ app.get("/", function (request, response) {
 //	response.sendFile('public/index.html');
 //	response.sendFile('/index.html');
 //	response.sendFile('./index.html');
-	response.sendFile('/index.html');
-	response.end();
+//	response.sendFile('/index.html');
+	res.set('Content-Type', 'text/html');
+	res.send('/index.html');
+	res.end();
 });
 
 
