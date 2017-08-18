@@ -7,14 +7,14 @@ for (var i=0;i<6;i++){
 	console.log(i);
 }
 
-//app.use(express.static('/'));
+app.use(express.static('/public'));
 // http://expressjs.com/en/starter/basic-routing.html
 
 
 app.get("/", function (request, response) {
-	response.send('<h1>ohmg</h1>');
+	//response.send('ohmg');
 	response.end();
-  //response.sendFile(__dirname + '/help.html');
+  response.sendFile(__dirname + '/index.html');
 });
 
 
