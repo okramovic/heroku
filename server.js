@@ -20,7 +20,7 @@ app.get("/", function (request, response) {
 //	response.sendFile('public/index.html');
 //	response.sendFile('/index.html');
 //	response.sendFile('./index.html');
-	response.sendFile('index.html');
+	response.sendFile('/index.html');
 	response.end();
 });
 
