@@ -13,8 +13,9 @@ app.use(express.static('/public'));
 
 app.get("/", function (request, response) {
 	//response.send('ohmg');
+
+	response.sendFile(__dirname + '/public/index.html');
 	response.end();
-  response.sendFile(__dirname + '/index.html');
 });
 
 
