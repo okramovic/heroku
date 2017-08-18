@@ -1,6 +1,6 @@
 console.log("hello node");
 
-//var path = require('path');
+var path = require('path');
 var express = require('express');
 var app = express();
 
@@ -20,7 +20,7 @@ app.get("/", function (request, response) {
 //	response.sendFile('public/index.html');
 //	response.sendFile('/index.html');
 //	response.sendFile('./index.html');
-	response.sendFile('./index.html');
+	response.sendFile('index.html');
 	response.end();
 });
 
