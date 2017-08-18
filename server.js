@@ -1,5 +1,6 @@
 console.log("hello node");
 
+var path = require('path');
 var express = require('express');
 var app = express();
 
@@ -14,10 +15,10 @@ for (var i=0;i<6;i++){
 app.get("/", function (request, response) {
 	//response.send('ohmg');
 
-//	response.sendFile(__dirname + '/index.html');
+	response.sendFile(__dirname + '/index.html');
 //	response.sendFile('public/index.html');
 //	response.sendFile('/index.html');
-	response.sendFile('./index.html');
+//	response.sendFile('./index.html');
 	response.end();
 });
 
