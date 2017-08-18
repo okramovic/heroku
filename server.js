@@ -14,7 +14,7 @@ for (var i=0;i<6;i++){
 app.get("/", function (request, response) {
 	//response.send('ohmg');
 
-	response.sendFile(__dirname + '/public/index.html');
+	response.sendFile(__dirname + '/index.html');
 //	response.sendFile('public/index.html');
 	response.end();
 });
