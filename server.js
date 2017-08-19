@@ -22,8 +22,8 @@ app.get("/", function (request, res) {
 //	response.sendFile('./index.html');
 //	response.sendFile('/index.html');
 	//res.set('Content-Type', 'text/html');
-	res.sendFile('index.html',{root: __dirname + '/'});
-	res.end();
+	res.sendFile('/index.html');
+	
 });
 
 
