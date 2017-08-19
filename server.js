@@ -8,7 +8,7 @@ for (var i=0;i<6;i++){
 	console.log(i);
 }
 
-//app.use(express.static('/public'));
+app.use(express.static('/public'));
 // http://expressjs.com/en/starter/basic-routing.html
 
 
@@ -22,7 +22,7 @@ app.get("/", function (request, res) {
 //	response.sendFile('./index.html');
 //	response.sendFile('/index.html');
 	//res.set('Content-Type', 'text/html');
-	res.sendFile(__dirname +'/index.html');
+	res.sendFile(__dirname +'/views/index.html');
 	
 });
 
