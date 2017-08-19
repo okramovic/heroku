@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fee-ki</title>
+    <!--meta name="description" content="A cool thing made with Glitch"-->
+    <!--link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon"-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,500,700,900|Oxygen:300,400,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">    
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    
+    <script src="/client.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="col-xs-8" style="display:-flex; justify-content: center;
+                                     width: 100%;">
+
+        <div id="logRegDiv" style="display:flex; justify-content: flex-end">
+          <div id="usr" style="margin: 10px"></div>
+          <div id="login" style="margin: 10px">log in</div>
+          <div id="register" style="margin: 10px"><a href="/register" target="_self">create account</a></div>
+        </div>
+          
+        <div style="display:flex; justify-content: center">
+          <div id="header" style="">
+            fee-ki
+          </div>
+        </div>
+          
+        <div id="loginDiv" style="width: 50%; margin:auto; flex-direction: column; align-items: center; justify-content: center">
+              <label>your name</label>
+              <input id="username" type="text"><br/>
+
+              <label>your password</label>
+              <input id="pass" type="password"><br/>
+
+              <input id="loginSubmit" type="submit" value="log in">
+        </div>  
+          
+        <div id="navigation" style="width: 100%; margin: auto;display: flex; justify-content: center;"> 
+            <div id="showBrowse">
+                Browse
+            </div>
+            <div id="showForm">
+                Send inquiry
+            </div>  
+            <div id="showHelp">
+                Help
+            </div>  
+        </div>
+        
+          
+        <div id="browseDiv">
+            <form id="searchForm">
+              <input id="searchFormText" type="text">
+              <input type="submit" value="search">
+              <div style="display: inline; font-size: 9px; margin-left: 5px;">
+              tips
+              </div>
+            </form>
+            <div style="margin: 20px 0px;">
+                recent posts:
+            </div>    
+                <div id="resultsDiv"></div>
+            
+        </div>          
+
+          
+        <div id="formDiv">
+          <form id="form">
+            <label>Who is sending</label><br/>
+            <input id="from" type="text" placeholder="" value="testnulanulanic@seznam.cz" disabled="true"><br/>
+            <label>Who you're sending to</label><br/>
+            <input id="to" type="text" placeholder="" value="testnulanulanic@seznam.cz" disabled="true"><br/>
+            <label>Copy (CC)</label><br/>
+            <input id="cc" type="text" placeholder="optional"><br/>
+            <label>Our email</label><br/>
+            <input id="our" type="text" placeholder="" value="testnulanulanic@seznam.cz" disabled="true"><br/>
+            <label>Subject</label><br/>
+            <input id="subject" type="text" placeholder=""><br/>
+            <label>Keywords</label><span style="margin-left: 10px;">use ; to divide keywords</span><br/>
+            <input id="keywords" type="text" placeholder=""><br/>
+            <label>Message</label><br/>
+            <textarea id="body" cols="50" rows="5" placeholder="text of your inquiry"></textarea><br/>
+            <input id="formSubmit" type="submit" value="Send inquiry">
+          </form>
+        </div>
+
+          
+        
+      </div>
+    </div>
+    <footer style="margin-top: 0px; padding-top: 20px; ">
+      <div class="container-fluid" style="display: flex; justify-content: center;">
+            <div class="col-xs-8" style="display: flex; justify-content: center;
+                                         width- 100%; border-top: 1px solid black;">
+                <div style="width: 100%; margin: auto; display: flex; justify-content: center;
+                            ">
+                  
+                    <div id="termsofservice" style="margin: 10px;">Terms of service</div>
+                    <div id="privacypolicy" style="margin: 10px;">Privacy policy</div>  
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
