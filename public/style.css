@@ -1,0 +1,177 @@
+
+/*
+      my fonts from google
+      https://fonts.google.com/?selection.family=Montserrat:200,200i,300,300i,400,500,700,900|Oxygen:300,400,700&category=Sans+Serif,Display,Monospace&selection.subset=latin-ext,vietnamese
+*/
+
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+/* {
+  box-  #formDiv form{sizing: border-box;
+}*/
+
+body {
+  /*font-family: helvetica, arial;*/
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Oxygen', sans-serif;
+  margin- 25px;
+  
+}
+.container-fluid{
+  max-width: 800px;
+}
+a {
+  text-decoration: none;
+}
+#header{
+  height- 0.2vh;
+  width- auto;
+  margin- auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+  text-align: center;
+  
+  font-size: 50px;
+  
+  display:flex;
+  justify-content: center
+}
+#header:hover{
+  cursor: pointer;
+}
+#loginDiv{
+  display: none;
+}
+#showForm{ 
+  margin: 10px 20px;
+  text-align: center;
+  /*display:flex;*/
+  width: 20%;
+}
+#showBrowse{
+  margin: 10px 20px;
+  text-align: center;
+  width: 20%;
+}
+#showHelp{
+  margin: 10px 20px;
+  text-align: center;
+  width: 20%;
+}
+#showForm:hover, #showBrowse:hover, #showHelp:hover, #termsofservice:hover, #privacypolicy:hover, #onNewInquiry:hover, #onReplying:hover{
+  
+  cursor: pointer;
+  font-weight: 700;  
+}
+#formDiv{
+  display: none;
+}
+label { 
+
+  font-size: 18px ;
+  margin-top: 10px;
+}
+
+#formDiv form input[type="text"], #formDiv form textarea{
+  
+  width: 100%;
+}
+#formSubmit:disabled{
+  
+  color: rgba(0,0,0,0.1);
+}
+#browseDiv{
+  
+}
+#searchForm{
+  width: 100%;
+  margin: auto;
+  
+  display: flex;
+  justify-content: center;
+  
+}
+
+.emailDisplayed{
+  
+  border: 1px solid white;
+  border-top: 1px solid black;
+  /*border-bottom: 1px solid black;*/
+  padding: 15px;
+  padding-bottom: 15px;
+   
+}
+.emailDisplayed:hover{
+  cursor: pointer;
+  background-color- rgba(230,230,230,0.35);
+  
+  border-top- 1px solid white;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+.msgHeader{
+  padding: 20px 20px 10px 20px;
+  background-color: rgba(230,230,230,1);
+  
+  border- 1px solid gray;
+  border-radius: 3px;
+}
+.adr{
+  display: inline;
+}
+.emailDisplayedBody{
+  margin-top: 15px;
+  padding: 0px 20px;
+}
+
+
+#helpDiv{
+  display: none;
+  
+}
+#helpDiv label{
+  font-size: 35px;
+  
+}
+#helpDiv .advice{
+  margin: 5px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items- center;
+}
+#helpDiv .advice .checkDiv{
+  width- 20%;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#helpDiv .advice div{
+  margin: 5px 0px;
+}
+#helpDiv input[type=checkbox]{
+  width: 10px;
+  height: 10px;
+  margin: 0px; 
+}
+#onNewInquiry, #onReplying{
+  margin: 0px 20px;
+  
+}
+#howToNewInquiry, #howToReply{
+  margin-top: 30px;
+  
+}
+#howToNewInquiry label, #howToReply label{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#termsofservice, #privacypolicy{
+  margin: 10px 20px;
+  text-align: center;
+  width: 20%;
+}
