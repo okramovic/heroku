@@ -22,7 +22,7 @@ app.get("/", function (request, res) {
 //	response.sendFile('./index.html');
 //	response.sendFile('/index.html');
 	//res.set('Content-Type', 'text/html');
-	res.sendFile('/index.html');
+	res.sendFile(__dirname +'/index.html');
 	
 });
 
